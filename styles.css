@@ -1,0 +1,292 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e42;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #2e2e56;
+  padding: 7px 800px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: white;
+  padding: 70px 10px;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: -0;
+  margin: -0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li {
+  display: inline;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-menu a:hover {
+  color: #007BFF;
+}
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e42;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Profile Section Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.profile-section:hover {
+  transform: translateY(-20px);
+  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to bottom, #0d0909);
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 70%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #5753c9;
+}
+
+.profile-text {
+  max-width: 600px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Content Section */
+.content-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Card */
+.card {
+  border: 1px solid #0d0909;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #2e2e56;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(to bottom, #0d0909);
+}
+
+.card h2,
+.card h3 {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Mobile Image */
+.mobileapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 150px;
+  /* Adjust the height as needed */
+  margin: 10px 0;
+}
+
+.mobileapp img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Button */
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5753c9;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonials-section h2 {
+  font-size: 28px;
+}
+
+.testimonials-section p {
+  font-size: 18px;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 45%;
+  margin: 10px;
+  background-color: #2e2e56;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #5753c9;
+
+}
+
+/* Skills Section */
+.skills-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill span {
+  display: inline-block;
+  width: 20%;
+  text-align: left;
+}
+
+.progress-bar {
+  display: inline-block;
+  background-color: #3e3e74;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 70%;
+  margin-left: 10px;
+  height: 20px;
+}
+
+.progress {
+  background-color: #6c63ff;
+  height: 100%;
+  width: 0;
+  transition: width 1s;
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2e56;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  /* Initially hidden */
+  animation: fadeIn 1s ease forwards;
+  /* Add fade-in animation */
+  margin-top: 30px;
+}
+
+
+
+.footer .social-media {
+  margin: 0 10px;
+  list-style-type: none;
+  padding: 0;
+  height: 45px;
+  /* width: 45px; */
+}
+
+.footer .social-media:hover {
+  color: #040e19;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    /* Fade in completely */
+  }
+}
+
+.footer p {
+  margin: 10px 0;
+  color: #cccccc;
+}
