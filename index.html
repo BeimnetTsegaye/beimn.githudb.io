@@ -14,66 +14,60 @@
                 <li><a href="index.html#profile">Profile</a></li>
                 <li><a href="index.html#content-section">Projects</a></li>
                 <li><a href="index.html#skills-section">Skills</a></li>
-                <li><a href="index.html#testimonials-section">Testimonials</a></li>
                 <li><a href="index.html#footer-section">Contact</a></li>
             </ul>
         </div>
     </nav>
+    
     <div class="container">
         <!-- Profile Section -->
-        <div  id ="profile" class="profile-section" style="width: 1000px;height: 280px; box-shadow: 10px;">
+        <div id="profile" class="profile-section" style="width: 1000px; height: 280px; box-shadow: 10px;">
             <img src="profile2.jpg" alt="Profile Picture" class="profile-pic">
-               <div class="profile-text">
+            <div class="profile-text">
                 <h1>I'm Beimnet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur vehicula elit, in malesuada felis malesuada vel.</p>
+                <p>A passionate software engineer with expertise in building robust, scalable, and user-friendly applications. I enjoy turning ideas into solutions that make an impact.</p>
             </div>
         </div>
 
         <!-- Content Section -->
         <div id="content-section" class="content-section">
             <div class="card">
-                <h2>Flutter/DRF</h2> <p>Utilize advanced machine learning techniques for classification tasks to improve accuracy and performance in various applications.</p>
-              
+                <h2>Flutter/DRF</h2>
+                <p>Build seamless mobile applications integrated with Django REST Framework for a responsive and secure backend.</p>
                 <div class="mobileapp">
                     <img src="mobileapp.png" alt="Mobile App">
                 </div>
-                <button>Details</button>
-                <button>Hide This</button>
+                <button onclick="window.location.href='project1.html'">Details</button>
+                <button onclick="this.parentElement.style.display='none';">Hide This</button>
             </div>
             <div class="card">
                 <h2>Machine Learning on Classification</h2>
-                <p>Utilize advanced machine learning techniques for classification tasks to improve accuracy and performance in various applications.</p>
-              
+                <p>Applied cutting-edge machine learning techniques for precise and efficient classification in various domains.</p>
                 <div class="mobileapp">
                     <img src="web.png" alt="Machine Learning">
                 </div>
-                <button>Contact</button>
-                <button>Hide This</button>
+                <button onclick="window.location.href='project2.html'">Details</button>
+                <button onclick="this.parentElement.style.display='none';">Hide This</button>
             </div>
             <div class="card">
                 <h2>Django/Python ORM</h2>
-                <p>Backend Development with ORM Django Framework</p>
-                 <p>Utilize advanced machine learning techniques for classification tasks to improve accuracy and performance in various applications.</p>
-              
+                <p>Developed scalable backend solutions using Django's Object-Relational Mapper (ORM) for database management and optimization.</p>
                 <div class="mobileapp">
                     <img src="web.png" alt="Backend Development">
                 </div>
-                <button>Details</button>
-                <button>Hide This</button>
+                <button onclick="window.location.href='project3.html'">Details</button>
+                <button onclick="this.parentElement.style.display='none';">Hide This</button>
             </div>
         </div>
 
-        <!-- Testimonials Section -->
-      
         <!-- Skills Section -->
-        <div id="skills-section"  class="skills-section">
+        <div id="skills-section" class="skills-section">
             <div class="skill">
                 <span>Python</span>
                 <div class="progress-bar">
                     <div class="progress" style="width: 80%;"></div>
                 </div>
-                
-           
+            </div>
             <div class="skill">
                 <span>HTML</span>
                 <div class="progress-bar">
@@ -85,22 +79,31 @@
                 <div class="progress-bar">
                     <div class="progress" style="width: 20%;"></div>
                 </div>
-            </div><span>DRF</span>
-            <div class="progress-bar">
-                <div class="progress" style="width: 80%;"></div>
             </div>
+            <div class="skill">
+                <span>DRF</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- Footer -->
-    <footer id="footer-section"  class="footer">
+    <footer id="footer-section" class="footer">
         <div class="containers">
             <div class="social-media">
-                <a href="https://linkedin.com/in/beimn-tsegaye-/in/beimn-tsegaye-" target="_blank"><img class="social-media" src="in.png"/></a>
-                <a href="https://linkedin.com/in/beimn-tsegaye-/in/beimn-tsegaye-" target="_blank"><img class="social-media" src="email.png"/></a>
-                <a href="https://linkedin.com/in/beimn-tsegaye-" target="_blank"><img class="social-media" src="fb.png"/></a>
+                <a href="https://linkedin.com/in/beimn-tsegaye-" target="_blank">
+                    <img class="social-media" src="in.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:beimnet.tsegaye@example.com" target="_blank">
+                    <img class="social-media" src="email.png" alt="Email">
+                </a>
+                <a href="https://facebook.com/beimn-tsegaye" target="_blank">
+                    <img class="social-media" src="fb.png" alt="Facebook">
+                </a>
             </div>
-            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
